@@ -1,0 +1,59 @@
+/*.head{
+    color:brown;
+}
+body {
+    background-color: aquamarine;
+}
+.colors{
+    color:brown;
+
+}
+.colors p{
+    background-color: blue;
+    color:aliceblue;
+}
+.box{
+    border: 10px solid red;
+    background-color: white;
+    /*border-color: red;
+    padding-top: 50px;
+}
+#fname{
+    background-color: brown;
+    border: 5px solid blue;
+}
+#pwd{
+    background-color: white;
+    border: 5px solid green ;
+}*/
+.card{
+    padding-left: 10px;
+    height: 400px;
+    width: 800px;
+    border-radius: 22px;
+    background-color: lightgray;
+    border:2px solid black;
+    box-shadow: 2px 2px 20px;
+}
+  
+
+.containe{
+    display: flex;
+
+}
+
+p {
+    line-height: 2rem;
+    margin-bottom: 0!important;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+}
+.container3{
+    display: flex;
+    justify-content: space-around;
+}
+
+

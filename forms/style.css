@@ -1,0 +1,11 @@
+#fname{
+    background-color: brown;
+    border: 10px solid gold;
+}
+#lname{
+    background-color: black;
+    border-radius: 10px;
+}
+#reset{
+    background-color: black;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+       
+        #grandparent {
+            background-color: green;
+            width: 300px;
+            height: 300px;
+        }
+        #parent {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+        #child {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .completed {
+  text-decoration: line-through;
+}
+
+
+    </style>
+</head>
+<body>
+ 
+    <input type="text" id="txt"/>
+
+
+
+
+    <div>
+   
+    <div id="grandparent">GrandParent
+        <div id="parent">Parent
+            <div id="child">Child</div>
+            </div>
+        </div>
+    </div>
+    <ul id="task">
+        <li>task1</li>
+        <li>task2</li>
+    </ul>
+
+
+    <script>
+        const grandParent = document.getElementById("grandparent");
+        const parent = document.getElementById("parent");
+        const child = document.getElementById("child");
+
+
+
+
+        const textEl= document.getElementById("txt")
+
+
+        grandParent.addEventListener("click", (a) => {
+ 
+           
+            a.stopPropagation()
+
+
+            console.log("GrandParent bubbling");
+       
+           
+        });
+
+
+        parent.addEventListener("click", (a) => {
+             //syntax to stop event bubbling
+            console.log("Parent bubbling");
+            a.stopPropagation()
+           
+        });
+
+
+        child.addEventListener("click", (e) => {
+            console.log("Child bubbling");
+            e.stopPropagation()
+           
+           
+        });
+
+let tasks = document.getElementById("task");
+tasks.addEventListener("click",(event)=>{
+    event.target.classList.toggle("completed");
+}); 
+
+    
+
+</script> 
+</html>
